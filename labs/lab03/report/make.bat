@@ -1,0 +1,3 @@
+pandoc --filter pandoc/filters/pandoc_fignos.py --filter pandoc/filters/pandoc_eqnos.py --filter pandoc/filters/pandoc_tablenos.py --filter pandoc/filters/pandoc_secnos.py --citeproc  --number-sections report.md -o report.docx
+
+pandoc --pdf-engine=lualatex --pdf-engine-opt=--shell-escape --filter pandoc/filters/pandoc_fignos.py --filter pandoc/filters/pandoc_eqnos.py --filter pandoc/filters/pandoc_tablenos.py --filter pandoc/filters/pandoc_secnos.py --citeproc  --number-sections report.md -o report.pdf
