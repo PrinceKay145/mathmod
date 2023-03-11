@@ -77,23 +77,43 @@ header-includes:
 Постройте графики изменения численности войск армии Х и армии У для следующих случаев:
 
 1. Модель боевых действий между регулярными войсками
+$$
+  \left\{
+  \begin{aligned}
+    &\frac{\mathrm{d} x}{\mathrm{d} t} = -0,45x(t)-0,86y(t) + \sin(t+1),\\
+    &\frac{d y}{d t} = -0,49x(t)-0,73y(t) + \cos(t+2).
+  \end{aligned}
+  \right.
+$$
 
+<!-- 
+\usepackage{physics}
 $$
-  \frac{dx}{dt} = -0,45x(t)-0,86y(t)+sin(t+1)
-$$
+  \left\{
+  \begin{aligned}
+    &\dv{x}{t} = -0,45x(t)-0,86y(t) + \sin(t+1),\\
+    &\dv{y}{t} = -0,49x(t)-0,73y(t) + \cos(t+2).
+  \end{aligned}
+  \right.
+$$ -->
 
+<!--
+https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath 
 $$
-\frac{dy}{dt} = -0,49x(t)-0,73y(t)+cos(t+2)
-$$
-
+\begin{aligned} 
+  2 x - 5y &=  8 \ \ 
+  3x + 9y &=  -12
+\end{aligned}
+$$ -->
 2. Модель ведение боевых действий с участием регулярных войск и партизанских отрядов
 
 $$
-  \frac{dx}{dt} = -0,34x(t)-0,81y(t)+sin(2t)
-$$
-
-$$
-  \frac{dy}{dt} = -0,22x(t)y(t)-0,91y(t)+cos(t)
+  \left\{
+  \begin{aligned}
+    &\frac{dx}{dt} = -0,34x(t) - 0,81y(t) + \sin(2t),\\
+    &\frac{dy}{dt} = -0,22x(t)y(t) - 0,91y(t) + \cos(t).
+  \end{aligned}
+  \right.
 $$
 
 # Теоретическое введение
@@ -224,15 +244,15 @@ savefig("Jlab32.png")
 
 Модель боевых действий между регулярными войсками :
 
-![Cлучай 1 - OpenModelica](image/mlab31.png "рис.1")
+![Cлучай 1 - OpenModelica](image/mlab31.png "рис.1"){width=80%}
 
-![Cлучай 1 - Julia](image/Jlab311.png "рис.2")
+![Cлучай 1 - Julia](image/Jlab311.png "рис.2"){width=80%}
 
 Модель ведение боевых действий с участием регулярных войск и партизанских отрядов :
 
-![Cлучай 2 - OpenModelica](image/MLab32.png "рис.3")
+![Cлучай 2 - OpenModelica](image/MLab32.png "рис.3"){width=80%}
 
-![Cлучай 2 - Julia](image/Jlab322.png "рис.4")
+![Cлучай 2 - Julia](image/Jlab322.png "рис.4"){width=80%}
 
 # Выводы
 
