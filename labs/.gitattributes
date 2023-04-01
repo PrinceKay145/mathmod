@@ -1,1 +1,1 @@
-git config --global core.safecrlf false
+git config core.safecrlf false
