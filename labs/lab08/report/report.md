@@ -211,7 +211,7 @@ plot(
 savefig("../report/image/Jlab81.png")
 ```
 
-![График для случай 1(J)](image/Jlab81.png){#fig:001, width=70%, height=70%}
+![График для случай 1(J)](image/Jlab81.png){#fig:001 width=70% height=70%}
 
 Code on OpenModelica:
 
@@ -241,7 +241,7 @@ der(m2)=(c2/c1)*m2-(b/c1)*m1*m2-(a2/c1)*m2*m2;
 end lab8;
 ```
 
-![График для случай 1(OM)](image/Mlab81.png)
+![График для случай 1(OM)](image/Mlab81.png){#fig:002 width=70% height=70%}
 
 **Случай 2.**
 
@@ -295,7 +295,7 @@ plot(
 savefig("../report/image/Jlab82.png")
 ```
 
-![График для случай 2(J)](image/Jlab82.png)
+![График для случай 2(J)](image/Jlab82.png){#fig:003 width=70% height=70%}
 
 Code on OpenModelica:
 
@@ -323,7 +323,7 @@ der(m2)=(c2/c1)*m2-(b/c1)*m1*m2-(a2/c1)*m2*m2;
 end lab8;
 ```
 
-![График для случай 2(OM)](image/Mlab82.png)
+![График для случай 2(OM)](image/Mlab82.png){#fig:004 width=70% height=70%}
 
 # Выводы
 
